@@ -1,0 +1,26 @@
+{
+  "name": "fdamern2",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "P Banik",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client-install": "yarn --cwd client install",
+    "client": "yarn --cwd client start",
+    "mern": "concurrently \"yarn dev\" \"yarn client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}
