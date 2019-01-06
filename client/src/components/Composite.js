@@ -1,4 +1,4 @@
-import DeckGL, { CompositeLayer, ScatterplotLayer, ArcLayer } from "deck.gl";
+import { CompositeLayer, ScatterplotLayer, ArcLayer } from "deck.gl";
 
 export default class Composite extends CompositeLayer {
   renderLayers() {

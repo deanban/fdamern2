@@ -1,4 +1,4 @@
-import DeckGL, { CompositeLayer } from "deck.gl";
+import { CompositeLayer } from "deck.gl";
 import Composite from "./Composite";
 
 import { clusterPoints } from "../data-processor/cluster_data";

@@ -1,8 +1,5 @@
-const keys = require("./mlab");
-
-module.exports = {
-  mongoURI: `mongodb://${keys.name}:${
-    keys.pass
-  }@ds253871.mlab.com:53871/recalls`,
-  secretOrKey: keys.secret
-};
+if (process.env.NODE_ENV === "production") {
+  module.exports = require("./keys_prod");
+} else {
+  module.exports = require("./keys_dev");
+}
