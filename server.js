@@ -10,10 +10,6 @@ const db = require("./config/keys").mongoURI;
 
 const app = express();
 
-app.get("/", (_, res) => {
-  res.send("hello world!");
-});
-
 mongoose
   .connect(
     db,
