@@ -63,7 +63,7 @@ export function fetchData() {
     })
       .then(resp => resp.json())
       .then(json => {
-        console.log("fetch", json);
+        // console.log("fetch", json);
         dispatch(fetchedRecalls(json));
         dispatch(findData(json));
         // dispatch(getPlaces());

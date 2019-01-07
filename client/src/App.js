@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   render() {
-    console.log("appstate ", this.props);
+    // console.log("appstate ", this.props);
     return (
       <div className="App">
         <MapContainer />
