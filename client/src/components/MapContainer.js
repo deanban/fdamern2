@@ -19,6 +19,7 @@ const navStyle = {
 
 class MapContainer extends Component {
   constructor(props) {
+    console.log("​MapContainer -> constructor -> props", props);
     super(props);
     this.state = {
       viewport: {
